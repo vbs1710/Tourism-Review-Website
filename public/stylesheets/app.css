@@ -1,0 +1,16 @@
+#cluster-map {
+    width: 100%;
+    height: 400px;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+/* isko jab include kra boilerplate mei aur fir maps ko liye use kra toh kaam nhi kra 
+toh iss vajah se inline css hi likhdi ....ab itni si baat ke liye time waste nhi krna
+
+     ab ye galti isiliye ho rhi thi kyuki showPage wale mei show.ejs wale mei same id honi thi jo humne app.css mei banayi h usnke liye
+     
+     same for clusterMap and index.ejs dono mei same id aur vo id app.css mei hogi jo humne inke liye banayi h*/
