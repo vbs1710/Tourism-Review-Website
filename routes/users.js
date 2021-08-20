@@ -7,7 +7,7 @@ const users = require('../controllers/users')
 
 router.route('/register')
     .get(users.renderRegister)
-    .post(catchAsync(users.register));   // router.route krke hum jinka path same h bas method alag h toh hum inko iss tarah se combine kr skte h .... router.route mei path likh do aur niche konsa route h vo likhdo(jese ki get post delete wagera wagera)
+    .post(catchAsync(users.register));   
 
 router.route('/login')
     .get(users.renderLogin)

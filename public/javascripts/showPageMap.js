@@ -6,7 +6,7 @@ const map = new mapboxgl.Map({
     zoom: 9 // starting zoom
 });
 
-map.addControl(new mapboxgl.NavigationControl());  // isse hum map mei zoom in zoom out wagera ka feature add kr skte h 
+map.addControl(new mapboxgl.NavigationControl());  
 
 new mapboxgl.Marker()
     .setLngLat(campground.geometry.coordinates)
@@ -16,4 +16,4 @@ new mapboxgl.Marker()
             `<h3>${campground.title}</h3><p>${campground.location}</p>`
         )
     )
-    .addTo(map);  // addTo ke andar map aayega ya vo variable ka naam jisse hum upar declare krenge
+    .addTo(map);  

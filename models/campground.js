@@ -14,7 +14,7 @@ ImageSchema.virtual('thumbnail').get(function () {
     return this.url.replace('/upload', '/upload/w_200');
 });
 
-const opts = { toJSON: { virtuals: true } };   // ye isiliye krna pada kyuki jab hum virtual property ki madad se property wali field add krenge(property isiliye add kr rhe kyuki jo humara clusterMap ka code h vo humare campground mei property wala field dhundh rha h to show information about the campground) toh vo humare final objecgt mei display nhi hogi kyuki humne usse JSON se parse kiya...toh usko add krane ke liye humei ye opt wala part humare model mei daalna pad rha
+const opts = { toJSON: { virtuals: true } };   
 
 const CampgroundSchema = new Schema({
     title: String,

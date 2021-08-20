@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-6">
-            
+
             <div id="campgroundCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <% campground.images.forEach((img, i)=> { %>
@@ -118,8 +118,8 @@
 
     <script>
         const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
-        const campground = <%- JSON.stringify(campground) %>     // mapToken mei humara token le lia(.env file mei copy kia tha usko humne mapbox ke docs se)... fir humne js ka code ko reference lia site se aur usko alag file mei lekr yaha include krwa dia...mapToken ko alag se isliye lia kyuki agar kabhi mujhe ise change krna hua toh ek jagah hi change krna padega....har jagah uski value daalne ka sense nhi h usse ek variable mei store kro aur jab bhi token value mei koi change krna ho toh variable ko change kr do...
-        // isko stringify isliye kiya kyuki valid javascript nhi ho rhi thi agar campground ko direct likh dete toh...error show ho rha tha....
+        const campground = <% - JSON.stringify(campground) %>
+
     </script>
 
     <script src="/javascripts/showPageMap.js"></script>

@@ -10,7 +10,7 @@
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
-            form.addEventListener('submit', function (event) {         // ye jo ologic h humne direct reference lia h matlaB Ki copy kiya h bootstraP SE
+            form.addEventListener('submit', function (event) {         
                 if (!form.checkValidity()) {
                 event.preventDefault()
                 event.stopPropagation()

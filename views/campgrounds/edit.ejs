@@ -39,7 +39,7 @@
                         <div class="form-check-inline">
                             <input type="checkbox" name="deleteImages[]" id="image-<%= i %>"
                                 value="<%= img.filename %>">
-                            <!-- ab jab hum edit wale form ko submit krenge tab hum req.body mei deleteImage wali field dekh skte ...toh jiss bhi image ko check krenge(delete ke liye check) vo humei deleteImage wali field mei mil jaayegi aur fir hum ussey mongo(mongo mei link stored rhega) aur cloudinary se delete kr denge -->
+
                             <label for="image-<%= i %>">Delete This Image</label>
                         </div>
                         <% }) %>
